@@ -1,5 +1,5 @@
 <?php
-    include_once "./config.php";
+    include_once "../config.php";
     $fname = mysqli_real_escape_string($conn,$_POST['fname']);
     $lname = mysqli_real_escape_string($conn,$_POST['lname']);
     $email = mysqli_real_escape_string($conn,$_POST['email']);
@@ -8,6 +8,6 @@
     if(!empty($fname) && !empty($lname) && !empty($email) && !empty($password)){
 
     }else{
-        echo "All input field are required !";
+        echo "All input field are required";
     }
 ?>

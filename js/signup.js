@@ -19,6 +19,6 @@ continueBtn.onclick = () => {
     }
 
     //Gui data tu ajax sang php
-    let formData = new formData(); // tao doi tuong formData
+    let formData = new FormData(form); // tao doi tuong formData
     xhr.send(formData);
 }
